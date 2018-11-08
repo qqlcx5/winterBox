@@ -1,0 +1,39 @@
+<template name="d5e74b94">
+  <view class="_view data-v-446c67ee">
+    <view class="_view data-v-446c67ee header">
+      <view class="_view data-v-446c67ee header-left">
+        <text class="_text data-v-446c67ee icon"></text>
+      </view>
+      <view class="_view data-v-446c67ee header-content"> 付款给个人 </view>
+      <view class="_view data-v-446c67ee header-right"></view>
+    </view>
+    <view class="_view data-v-446c67ee pay">
+      <view class="_view data-v-446c67ee payinfo">
+        <image src="../../static/msg1.png" mode class="_image data-v-446c67ee"></image>
+        <view class="_p data-v-446c67ee">昵称：13800138000</view>
+      </view>
+      <view class="_view data-v-446c67ee pay-bill"> BTC余额230.55 </view>
+      <view class="_view data-v-446c67ee pay-transfer">
+        <image class="_image data-v-446c67ee pay-transfer-img" src="../../static/B1.png" mode></image>
+        <input class="_input data-v-446c67ee pay-transfer-input" type="text" value="" />
+        <view class="_view data-v-446c67ee pay-transfer-text">BTC</view>
+      </view>
+    </view>
+    <view class="_view data-v-446c67ee fix">
+      <view class="_view data-v-446c67ee fixnum">1</view>
+      <view class="_view data-v-446c67ee fixnum">2</view>
+      <view class="_view data-v-446c67ee fixnum">3</view>
+      <view class="_view data-v-446c67ee fixnum">4</view>
+      <view class="_view data-v-446c67ee fixnum">5</view>
+      <view class="_view data-v-446c67ee fixnum">6</view>
+      <view class="_view data-v-446c67ee fixnum">7</view>
+      <view class="_view data-v-446c67ee fixnum">8</view>
+      <view class="_view data-v-446c67ee fixnum">9</view>
+      <view class="_view data-v-446c67ee fixnum"></view>
+      <view class="_view data-v-446c67ee fixnum">0</view>
+      <view class="_view data-v-446c67ee fixnum">
+        <image src="../../static/shanchu_2.png" mode class="_image data-v-446c67ee"></image>
+      </view>
+    </view>
+  </view>
+</template>

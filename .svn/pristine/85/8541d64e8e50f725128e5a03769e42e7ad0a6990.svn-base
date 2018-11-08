@@ -1,0 +1,89 @@
+<template>
+  <view class="page">
+    <view class="header">
+      <view class="header-left"
+             @tap="backs()">
+        <text class="icon">&#xe601;</text>
+      </view>
+      <view class="header-content">
+        训练计划
+      </view>
+      <view class="header-right">
+        <text class="icon">&#xe622;</text>
+      </view>
+    </view>
+    <view class="tab-title">
+      <view class="tab select">周课表</view>
+      <view class="tab">月训练计划</view>
+    </view>
+    <view class="list">
+      <view class="item">
+        <text class="item-name">10月22日—10月29日 周课表</text>
+        <text class="item-desc">详情</text>
+        <text class="gIcon">&#xe6fb;</text>
+      </view>
+      <view class="item">
+        <text class="item-name">10月22日—10月29日 周课表</text>
+        <text class="item-desc">详情</text>
+        <text class="gIcon select">&#xe6fb;</text>
+      </view>
+    </view>
+  </view>
+</template>
+  
+<script>
+
+export default {
+  data () {
+    return {}
+  }
+}
+</script>
+<style>
+.tab-title {
+  width: 750px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.tab-title .tab {
+  width: 280px;
+  height: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #e45252;
+  box-sizing: border-box;
+  color: #666666;
+}
+.tab-title .select {
+  background-color: #d0021b;
+  color: #ffffff;
+}
+.tab-title .tab:nth-child(1) {
+  border-radius: 12px 0 0 12px;
+}
+.tab-title .tab:nth-child(2) {
+  border-radius: 0 12px 12px 0;
+}
+.item {
+  width: 750px;
+  height: 100px;
+  padding: 0 30px;
+  line-height: 100px;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 2px solid #e6e6e6;
+  color: #666666;
+}
+.item-desc {
+  font-size: 24px;
+  color: #4a90e2;
+  flex: 1;
+  margin-left: 30px;
+}
+.item .select {
+  color: #4a90e2;
+}
+</style>

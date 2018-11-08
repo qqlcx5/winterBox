@@ -1,0 +1,9 @@
+<template name="23e21154">
+  <view class="_view data-v-15212aa9 page">
+    <view class="_view data-v-15212aa9 header">
+      <view class="_view data-v-15212aa9 header-left"></view>
+      <view class="_view data-v-15212aa9 header-content"> 包河消防 </view>
+      <view class="_view data-v-15212aa9 header-right"></view>
+    </view>
+  </view>
+</template>

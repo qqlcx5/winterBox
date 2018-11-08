@@ -1,0 +1,308 @@
+<template>
+	<view class="page">
+		<view class="header">
+			<view class="header-left " @tap="backs">
+				<text class="icon">&#xe661;</text>
+			</view>
+			<view class="header-content">
+				平台客服
+			</view>
+			<view class="header-right">
+				<text class="icon">&#xe662;</text>
+			</view>
+		</view>
+		<view class="dialog" v-for="item in 3" :key="item">
+			<view class="dialogTime">
+				2018-10-29 14:55:30
+			</view>
+			<view class="dialogItem you">
+				<view>
+					<image class="you-img" src="../../static/msg3.png"></image>
+				</view>
+
+				<view class="dialog-box you-box">
+					请问有什么可以帮您的？请问有什么可以帮您的？
+					请问有什么可以帮您的？请问有什么可以帮您的？
+					请问有什么可以帮您的？请问有什么可以帮您的？
+					请问有什么可以帮您的？请问有什么可以帮您的？
+					<view class="you-arrow"></view>
+				</view>
+
+
+			</view>
+			<view class="dialogItem my">
+				<view class="dialog-box my-box">
+					请问有什么可以帮您的？请问有什么可以帮您的？请问有什么可以帮您的？请问有什么可以帮您的？
+					<view class="my-arrow"></view>
+				</view>
+				<view>
+					<image class="my-img" src="../../static/msg1.png"></image>
+				</view>
+			</view>
+		</view>
+		<!-- 占固定定位位置 -->
+		<view class="bottomBox" :class="{isbottomBox:isSend}">
+			<view class="bottom">
+				<view class="send-message">
+					<image class="mgl30 mgr20" src="../../static/dialog1.png" mode=""></image>
+					<input type="text">
+					<image class="mgl20 mgr30" src="../../static/dialog2.png" @tap="isSend = !isSend"></image>
+					<view class="mgr30 mbtn btninfo">发送</view>
+				</view>
+				<view class="send-box" v-if="isSend">
+					<view class="send-item">
+						<view class="item-image">
+							<image src="../../static/dialog_2.png" mode=""></image>
+						</view>
+						<p>发送</p>
+					</view>
+					<view class="send-item">
+						<view class="item-image">
+							<image src="../../static/dialog_3.png" mode=""></image>
+						</view>
+						<p>接收</p>
+					</view>
+					<view class="send-item">
+						<view class="item-image">
+							<image src="../../static/dialog.png" mode=""></image>
+						</view>
+						<p>图片</p>
+					</view>
+
+
+
+
+
+				</view>
+
+			</view>
+
+		</view>
+	</view>
+</template>
+
+
+<script>
+	export default {
+		data() {
+			return {
+				isSend: false
+			}
+		},
+		methods: {}
+
+	}
+</script>
+
+<style>
+	.page {
+		min-height: 100vh;
+		width: 100%;
+		background-color: #F7F7F7;
+		/* padding-bottom: 100px; */
+	}
+
+	.bottomBox {
+		height: 100px;
+		width: 100%;
+	}
+
+	.isbottomBox {
+		height: 400px;
+		width: 100%;
+	}
+
+	.dialogTime {
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+		font-size: 28px;
+		color: #999999;
+		text-align: center;
+	}
+
+	.dialogItem {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		min-height: 80px;
+		margin-bottom: 30px;
+		font-size: 28px;
+
+	}
+
+	.you {
+		position: relative;
+		justify-content: flex-start;
+	}
+
+	.you-img {
+		position: absolute;
+		top: 0;
+		left: 30px;
+		width: 80px;
+		height: 80px;
+		border-radius: 12px;
+	}
+
+	.dialog-box {
+		min-width: 40px;
+		max-width: 50%;
+		min-height: 40px;
+		padding: 15px;
+		box-sizing: border-box;
+		word-break: break-word;
+		border-radius: 10px;
+
+		font-size: 28px;
+	}
+
+	.you-box {
+		margin-left: 140px;
+		background: #FFFFFF;
+		color: #666666;
+		position: relative;
+	}
+	.you-arrow{
+		position: absolute;
+		top: 20px;
+		left: -28px;
+		z-index: 10;
+		width: 0;
+        height: 0;
+        font-size: 0;
+        border: solid 16px;
+		background-color: #f7f7f7;
+        border-color: #f7f7f7 #fff #f7f7f7 #f7f7f7;
+	}
+
+	.my {
+		position: relative;
+		justify-content: flex-end;
+	}
+
+	.my-img {
+		position: absolute;
+		top: 0;
+		right: 30px;
+		width: 80px;
+		height: 80px;
+		border-radius: 12px;
+	}
+
+	.my-box {
+		margin-right: 140px;
+		background-color: #79c343;
+		border-radius: 10px;
+		color: #ffffff;
+		position: relative;
+	}
+	.my-arrow{
+		position: absolute;
+		top: 20px;
+		right: -28px;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		font-size: 0;
+		border: solid 16px;
+		background-color: #f7f7f7;
+		border-color: #f7f7f7 #f7f7f7 #f7f7f7 #79c343;
+	}
+
+	/* 底部 */
+	.bottom {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		min-height: 100px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.send-message {
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100px;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		border-bottom: 2px solid #EEEEEE;
+	}
+
+	.send-message image {
+		height: 64px;
+		width: 64px;
+	}
+
+	.send-message input {
+		padding: 0 30px;
+		box-sizing: border-box;
+		flex: 1;
+		height: 60px;
+		background-color: #ffffff;
+		border: 2px solid #EEEEEE;
+		border-radius: 12px;
+	}
+
+	.btninfo {
+		width: 100px;
+		height: 54px;
+		color: #FFFFFF;
+		background-color: #67ba61;
+	}
+
+	.send-box {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		min-height: 300px;
+		width: 100%;
+		background: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+
+
+	.item-image {
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+		position: relative;
+
+	}
+
+	.send-item {
+		flex: 1;
+		min-height: 100px;
+		margin: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.send-item image {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		right: 0;
+		margin-left: -40%;
+		width: 80%;
+		height: 80%;
+	}
+
+	.send-item p {
+
+		width: 100%;
+		height: 100%;
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+</style>

@@ -1,0 +1,49 @@
+{
+	"pages": [
+		{
+			"path": "pages/wealth/wealth"
+		},
+		{
+			"path": "pages/message/dialog"
+		},{
+			"path": "pages/message/message"
+		},
+		{
+			"path": "pages/friend/friend"
+		},  {
+			"path": "pages/my/my"
+		}
+
+
+	],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#b6b6b6",
+		"selectedColor": "#1a1a1a",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+			"pagePath": "pages/message/message",
+			"iconPath": "static/message.png",
+			"selectedIconPath": "static/messageS.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/wealth/wealth",
+			"iconPath": "static/wealth.png",
+			"selectedIconPath": "static/wealthS.png",
+			"text": "财富"
+		}, {
+			"pagePath": "pages/friend/friend",
+			"iconPath": "static/friend.png",
+			"selectedIconPath": "static/friendS.png",
+			"text": "好友"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "static/my.png",
+			"selectedIconPath": "static/myS.png",
+			"text": "我的"
+		}]
+	}
+}

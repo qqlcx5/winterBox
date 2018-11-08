@@ -1,0 +1,1 @@
+.van-tab{-webkit-box-flex:1;-webkit-flex:1;flex:1;cursor:pointer;padding:0 5px;font-size:14px;position:relative;color:#333;line-height:44px;text-align:center;box-sizing:border-box;background-color:#fff;min-width:0}.van-tab span{display:block}.van-tab--active{color:#f44}.van-tab--disabled{color:#c9c9c9}

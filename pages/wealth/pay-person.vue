@@ -2,7 +2,7 @@
 	<view class="">
 		<view class="header">
 			<view class="header-left">
-				<text class="icon">&#xe60a;</text>
+				<text class="icon">&#xe661;</text>
 			</view>
 			<view class="header-content">
 				付款给个人
@@ -25,6 +25,12 @@
 				<view class="pay-transfer-text">BTC</view>
 			</view>
 		</view>
+		<view class="mgt80">
+			<view class="btn">
+			确认付款
+		</view>
+		</view>
+		
 		<view class="fix">
 			<view class="fixnum">1</view>
 			<view class="fixnum">2</view>
@@ -35,7 +41,7 @@
 			<view class="fixnum">7</view>
 			<view class="fixnum">8</view>
 			<view class="fixnum">9</view>
-			<view class="fixnum"></view>
+			<view class="fixnum">.</view>
 			<view class="fixnum">0</view>
 			<view class="fixnum">
 				<image src="../../static/shanchu_2.png" mode=""></image>
@@ -162,11 +168,11 @@
 	}
 
 	.fixnum:nth-of-type(10) {
-		background-color: #e3e3e3;
+		background-color: #ececec;
 	}
 
 	.fixnum:nth-of-type(12) {
-		background-color: #e3e3e3;
+		background-color: #ececec;
 	}
 
 	.fixnum image {

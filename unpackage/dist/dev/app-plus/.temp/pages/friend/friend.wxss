@@ -19,6 +19,7 @@
   font-size: 32rpx;
   color: #666;
   padding-left: 30rpx;
+  box-sizing: border-box;
 }
 .area-item {
   display: -webkit-box;

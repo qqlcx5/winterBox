@@ -1,11 +1,15 @@
 
-.pay {
-  min-height: 300rpx;
-  width: 80%;
-  border: solid 2rpx #1a1a1a;
-  overflow: hidden;
-  border-radius: 12rpx;
-  margin: 60rpx auto 0;
+.page {
+  min-height: 100vh;
+  width: 750rpx;
+  background-color: #F7F7F7;
+}
+.page .msg-list {
+  padding-bottom: 60rpx;
+}
+.msg-list,
+.item,
+.item-info {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -14,117 +18,115 @@
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-.payheader image {
-  width: 25rpx;
-  height: 25rpx;
-  left: 30rpx;
-  top: 36rpx;
-  position: absolute;
-}
-.payinfo {
-  height: 170rpx;
+.item-title {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  border-bottom: 4rpx solid #1a1a1a;
-  padding: 20rpx 0;
+  height: 80rpx;
+  width: 750rpx;
+  font-size: 24rpx;
+  color: #999999;
+  padding: 0 30rpx;
   box-sizing: border-box;
 }
-.payinfo image {
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 12rpx;
-  margin-bottom: 10rpx;
+.item-note {
+  color: #333333;
 }
-.payinfo ._p {
-  font-size: 28rpx;
-  color: #1a1a1a;
+.item-info {
+  width: 690rpx;
+  min-height: 200rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  border: solid 2rpx #d9d9d9;
+  margin: 0 auto;
 }
-.pay-bill {
+.item-info-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   height: 100rpx;
-  line-height: 100rpx;
-  width: 100%;
-  padding-left: 30rpx;
+  width: 690rpx;
+  padding: 0 20rpx;
   box-sizing: border-box;
-  color: #b6b6b6;
+  color: #999999;
+  border-bottom: solid 2rpx #f6f6f6;
 }
-.pay-transfer {
+.item-info-name {
+  height: 100rpx;
+  width: 300rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  height: 120rpx;
-  width: 100%;
-  padding-bottom: 40rpx;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #333333;
 }
-.pay-transfer-img {
-  width: 80rpx;
-  height: 80rpx;
-  margin-left: 30rpx;
+.item-info-title image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
 }
-.pay-transfer-input {
-  height: 80rpx;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  text-align: right;
+.item-info-bill {
+  font-size: 28rpx;
+  color: #999999;
 }
-.pay-transfer-text {
-  margin-left: 20rpx;
-  width: 100rpx;
-  height: 80rpx;
-  line-height: 80rpx;
+.item-box {
+  height: 160rpx;
+  width: 690rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.item-box-num {
   font-size: 36rpx;
-  color: #1a1a1a;
-}
-.fix {
-  border-top: solid 2rpx #e3e3e3;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  min-height: 0;
-  width: 100%;
+  color: #999;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-.fixnum {
-  width: 33.33%;
-  height: 108rpx;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  box-sizing: border-box;
-  font-size: 40rpx;
-  border-right: 2rpx solid #e3e3e3;
-  border-bottom: 2rpx solid #e3e3e3;
-  background-color: #FFFFFF;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 160rpx;
+  font-size: 28rpx;
 }
-.fixnum:nth-of-type(10) {
-  background-color: #e3e3e3;
+.item-box-num-i {
+  color: #fc3036;
+  font-size: 36rpx;
+  color: #ec584e;
+  margin-bottom: 10rpx;
 }
-.fixnum:nth-of-type(12) {
-  background-color: #e3e3e3;
-}
-.fixnum image {
-  width: 50rpx;
-  height: 40rpx;
+.item-box-remain-i {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+  color: #333333;
 }

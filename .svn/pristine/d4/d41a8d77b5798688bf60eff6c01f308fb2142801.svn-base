@@ -1,0 +1,16 @@
+<template name="23e21154">
+  <view class="_view data-v-15212aa9">
+    <view class="_view data-v-15212aa9 header">
+      <view class="_view data-v-15212aa9 header-left">
+        <text class="_text data-v-15212aa9 icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 header-content"> 绑定手机 </view>
+      <view class="_view data-v-15212aa9 header-right"></view>
+    </view>
+    <view class="_view data-v-15212aa9 msg-box">
+      <image class="_image data-v-15212aa9 msg-img" src="../../static/success3.png" mode></image>
+      <text class="_text data-v-15212aa9 msg-title">恭喜，绑定成功！</text>
+      <text class="_text data-v-15212aa9 msg-desc"></text>
+    </view>
+  </view>
+</template>

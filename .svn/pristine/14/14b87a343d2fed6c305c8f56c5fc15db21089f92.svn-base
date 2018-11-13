@@ -1,0 +1,55 @@
+<template>
+	<view class="page">
+		<view class="header">
+			<view class="header-left">
+				<text class="icon">&#xe661;</text>
+			</view>
+			<view class="header-content">
+				提币
+			</view>
+			<view class="header-right">
+				<text>提币记录</text>
+			</view>
+		</view>
+		<view class="carry-box">
+			<view class="carry-img">
+				dddd
+			</view>
+		</view>
+	</view>
+</template>
+<script>
+	export default {
+		data() {
+			return {}
+		}
+	}
+</script>
+<style>
+	.header-right text {
+		position: absolute;
+		right: 30px;
+		top: 70px;
+		font-size: 28px;
+		color: #ffffff;
+	}
+
+	.carry-box {
+		min-height: 660px;
+		width: 750px;
+		padding: 30px 30px 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.carry-img {
+		width: 690px;
+		height: 250px;
+		border-radius: 10px;
+		background-color: #E97B78;
+		background: url('http://pi23ib6iq.bkt.clouddn.com/balance.png') no-repeat center;
+		background-size: cover;
+	}
+</style>

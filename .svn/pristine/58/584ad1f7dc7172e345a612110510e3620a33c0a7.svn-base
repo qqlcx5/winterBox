@@ -1,0 +1,29 @@
+
+.header-right text {
+  position: absolute;
+  right: 30rpx;
+  top: 70rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+}
+.carry-box {
+  min-height: 660rpx;
+  width: 750rpx;
+  padding: 30rpx 30rpx 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.carry-img {
+  width: 690rpx;
+  height: 250rpx;
+  border-radius: 10rpx;
+  background-color: #E97B78;
+  background: url('http://pi23ib6iq.bkt.clouddn.com/balance.png') no-repeat center;
+  background-size: cover;
+}

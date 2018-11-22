@@ -1,0 +1,34 @@
+<template name="ab2dbe1e">
+  <view class="_view data-v-deb91d78 page">
+    <view class="_view data-v-deb91d78 header">
+      <view class="_view data-v-deb91d78 header-left">
+        <text class="_text data-v-deb91d78 icon"></text>
+      </view>
+      <view class="_view data-v-deb91d78 header-content"> 修改资料 </view>
+      <view class="_view data-v-deb91d78 header-right">
+        <text class="_text data-v-deb91d78">保存</text>
+      </view>
+    </view>
+    <view class="_view data-v-deb91d78 list">
+      <view class="_view data-v-deb91d78 item">
+        <text class="_text data-v-deb91d78 item-name"> 昵称 </text>
+        <input class="_input data-v-deb91d78 item-input" type="text" value="" placeholder="大脸猫" />
+      </view>
+      <view class="_view data-v-deb91d78 item">
+        <text class="_text data-v-deb91d78 item-name"> 性别 </text>
+        <radio-group class="_radio-group data-v-deb91d78">
+          <label class="_label data-v-deb91d78 radio">
+            <radio value="0" checked="0" class="_radio data-v-deb91d78" />男 </label>
+          <label class="_label data-v-deb91d78 radio">
+            <radio value="1" class="_radio data-v-deb91d78" />女 </label>
+        </radio-group>
+      </view>
+      <view class="_view data-v-deb91d78 item">
+        <text class="_text data-v-deb91d78 item-name"> 生日 </text>
+        <picker class="_picker data-v-deb91d78 item-picker" mode="date" start="1970-01-01" end="2019-01-01" bindchange="handleProxy" data-eventid="{{'jFZ-0'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-deb91d78"> {{date}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</template>

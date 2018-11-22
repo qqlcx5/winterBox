@@ -1,0 +1,66 @@
+<template name="d5e74b94">
+  <view class="_view data-v-446c67ee page">
+    <view class="_view data-v-446c67ee header-box">
+      <view class="_view data-v-446c67ee Gheader">
+        <view class="_view data-v-446c67ee header-left " bindtap="handleProxy" data-eventid="{{'q5a-0'}}" data-comkey="{{$k}}">
+          <text class="_text data-v-446c67ee icon"></text>
+        </view>
+        <view class="_view data-v-446c67ee header-content"> 我的资产 </view>
+        <view class="_view data-v-446c67ee header-right">
+          <text class="_text data-v-446c67ee icon"></text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-446c67ee msg-box">
+      <view class="_view data-v-446c67ee">
+        <text class="_text data-v-446c67ee mgl30 msg-icon mgr20"></text>
+      </view>
+      <swiper vertical="true" autoplay="true" circular="true" interval="1000" class="_swiper data-v-446c67ee">
+        <swiper-item wx:for="{{msgList}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-446c67ee">
+          <navigator class="_navigator data-v-446c67ee">{{item.name}}</navigator>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_view data-v-446c67ee list-box">
+      <view class="_view data-v-446c67ee item" wx:for="{{2}}" wx:for-index="index" wx:for-item="i">
+        <view class="_view data-v-446c67ee item-img">
+          <view class="_view data-v-446c67ee item-img-name">
+            <image src="../../static/B2.png" class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">CNY（人民币）</text>
+          </view>
+          <text class="_text data-v-446c67ee item-img-desc">2855.40</text>
+          <view class="_view data-v-446c67ee item-img-btn">
+            <image src="../../static/tibidizhi.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">提币地址</text>
+          </view>
+        </view>
+        <view class="_view data-v-446c67ee item-icon-box">
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth1.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">转币记录</text>
+          </view>
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth2.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">充币记录</text>
+          </view>
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth3.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">提币记录</text>
+          </view>
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth4.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">充币</text>
+          </view>
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth5.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">提币</text>
+          </view>
+          <view class="_view data-v-446c67ee item-icon">
+            <image src="../../static/wealth6.png" mode class="_image data-v-446c67ee"></image>
+            <text class="_text data-v-446c67ee">转给好友</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,17 +1,27 @@
 {
 	"pages": [
+
+		{
+			"path": "pages/message/message"
+		},
 		{
 			"path": "pages/wealth/wealth"
 		},
 		{
 			"path": "pages/message/dialog"
-		},{
-			"path": "pages/message/message"
 		},
 		{
 			"path": "pages/friend/friend"
-		},  {
+		}, {
 			"path": "pages/my/my"
+		},
+		{
+			"path": "pages/wealth/remark"
+		},
+		{
+			"path": "pages/wealth/modifyinfo"
+		}, {
+			"path": "pages/wealth/tibidizhi"
 		}
 
 

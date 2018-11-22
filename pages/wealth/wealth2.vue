@@ -39,15 +39,15 @@
 					</view>
 				</view>
 				<view class="item-icon-box">
-					<view class="item-icon">
+					<view class="item-icon" @tap="ways('remark')">
 						<image src="../../static/wealth1.png" mode=""></image>
 						<text>转币记录</text>
 					</view>
-					<view class="item-icon">
+					<view class="item-icon" @tap="ways('modifyinfo')">
 						<image src="../../static/wealth2.png" mode=""></image>
 						<text>充币记录</text>
 					</view>
-					<view class="item-icon">
+					<view class="item-icon" @tap="ways('tibidizhi')">
 						<image src="../../static/wealth3.png" mode=""></image>
 						<text>提币记录</text>
 					</view>

@@ -1,0 +1,7 @@
+<template name="a9ff2dd4"><view class="_view data-v-18844a2e page"><view class="_view data-v-18844a2e header-fix"><view class="_view data-v-18844a2e header"><view class="_view data-v-18844a2e header-left"><text class="_text data-v-18844a2e icon"></text></view> <view class="_view data-v-18844a2e header-content">
+				好友
+			</view> <view class="_view data-v-18844a2e header-right"><text class="_text data-v-18844a2e icon"></text></view></view></view> <view class="_view data-v-18844a2e area" wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item"><view class="_div data-v-18844a2e area-title">
+			{{index}}
+		</view> <view class="_div data-v-18844a2e area-item" wx:key="keys" key="{{keys}}" bindtap="handleProxy" data-eventid="{{'q16-0-'+index+'-'+keys}}" data-comkey="{{$k}}" wx:for="{{item}}" wx:for-index="keys" wx:for-item="i"><view class="_view data-v-18844a2e area-image"><image src="{{i.img}}" mode class="_image data-v-18844a2e"></image></view> <view class="_view data-v-18844a2e">
+				{{i.name}}
+			</view></view></view> <view class="_view data-v-18844a2e total">{{list["普通好友"].length}}位联系人</view></view></template>

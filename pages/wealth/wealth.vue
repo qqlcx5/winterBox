@@ -1,167 +1,249 @@
 <template>
 	<view class="page">
-		<view class="header">
-			<view class="header-left">
-				<text class="icon">&#xe661;</text>
-			</view>
-			<view class="header-content">
-				转币记录
-			</view>
-			<view class="header-right">
-
-			</view>
-		</view>
-		<view class="msg-list">
-			<view class="item" v-for="i in 3">
-				<view class="item-title">
-					<text>发生时间：2018-10-29 20:19:21</text>
-					<text class="item-note">备注：站外模拟入款操作</text>
+		<view class="header-box">
+			<view class="Gheader">
+				<view class="header-left " @tap="backs">
+					<text class="icon">&#xe60a;</text>
 				</view>
-				<view class="item-info">
-					<view class="item-info-title">
-						<view class="item-info-name">
-							<image src="../../static/B1.png" mode=""></image>
-							<text class="">CNY(人民币)</text>
-						</view>
-						<view class="item-info-bill">
-							订单号：69432269
-						</view>
-
-					</view>
-					<view class="item-box">
-						<view class="item-box-num">
-							<text class="item-box-num-i">-50</text>
-							<text>账变数量</text>
-						</view>
-						<view class="item-box-num">
-							<text class="item-box-remain-i">2302.12</text>
-							<text>剩余数量</text>
-						</view>
-
-					</view>
+				<view class="header-content">
+					我的资产
+				</view>
+				<view class="header-right">
+					<text class="icon">&#xe608;</text>
 				</view>
 			</view>
+
+
 		</view>
-
-
+		<view class="msg-box">
+			<view class="">
+				<text class="mgl30 msg-icon mgr20">&#xe652;</text>
+			</view>
+			<swiper vertical="true" autoplay="true" circular="true" interval="1000">
+				<swiper-item v-for=" item in msgList">
+					<navigator>{{item.name}}</navigator>
+				</swiper-item>
+			</swiper>
+		</view>
+		<view class="list-box">
+			<view class="item" v-for="i in 2">
+				<view class="item-img">
+					<view class="item-img-name">
+						<image src="../../static/B2.png"></image>
+						<text>CNY（人民币）</text>
+					</view>
+					<text class="item-img-desc">2855.40</text>
+					<view class="item-img-btn">
+						<image src="../../static/tibidizhi.png" mode=""></image>
+						<text>提币地址</text>
+					</view>
+				</view>
+				<view class="item-icon-box">
+					<view class="item-icon" @tap="ways('remark')">
+						<image src="../../static/wealth1.png" mode=""></image>
+						<text>转币记录</text>
+					</view>
+					<view class="item-icon" @tap="ways('modifyinfo')">
+						<image src="../../static/wealth2.png" mode=""></image>
+						<text>充币记录</text>
+					</view>
+					<view class="item-icon" @tap="ways('tibidizhi')">
+						<image src="../../static/wealth3.png" mode=""></image>
+						<text>提币记录</text>
+					</view>
+					<view class="item-icon">
+						<image src="../../static/wealth4.png" mode=""></image>
+						<text>充币</text>
+					</view>
+					<view class="item-icon">
+						<image src="../../static/wealth5.png" mode=""></image>
+						<text>提币</text>
+					</view>
+					<view class="item-icon">
+						<image src="../../static/wealth6.png" mode=""></image>
+						<text>转给好友</text>
+					</view>
+				</view>
+			</view>
+		</view>
 
 	</view>
 </template>
+
+
 <script>
 	export default {
 		data() {
-			return {}
-		}
+			return {
+				msgList: [{
+						name: "常见问题解答，你还不知道答案吗？"
+					}, {
+						name: "CNY（人民币）"
+					}, {
+						name: "BTC（比特币）"
+					}, {
+						name: "招商银行 王熊猫 622021410268789"
+					}
+
+				]
+			}
+		},
+		methods: {}
+
 	}
 </script>
+
 <style>
 	.page {
 		min-height: 100vh;
-		width: 750px;
+		width: 100%;
 		background-color: #F7F7F7;
 	}
 
-	.page .msg-list {
-		padding-bottom: 60px;
-	}
-
-	.msg-list,
-	.item,
-	.item-info {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.item-title {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 80px;
+	.header-box {
+		height: 420px;
 		width: 750px;
-		font-size: 24px;
-		color: #999999;
+		background: url('http://pi23ib6iq.bkt.clouddn.com/banner1.png') no-repeat center;
+		background-size: cover;
+	}
+
+	/* 修改的header */
+	.Gheader {
+		height: 128px;
+		width: 100%;
+		display: flex;
+		padding-top: 40px;
+		box-sizing: border-box;
+		padding-top: 40px;
+		align-items: center;
+		position: relative;
+	}
+
+	.msg-box {
+		flex-wrap: nowrap;
+		margin: -40px auto 30px;
+		width: 690px;
+		height: 80px;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 8px 0px #e8e8e8;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		font-size: 28px;
+		color: #666666;
+
+	}
+
+	.msg-icon {
+		font-size: 48px;
+		color: #deae42;
+		font-family: iconfont;
+	}
+
+	.msg-box swiper {
+		width: 100%;
+		height: 80px;
+	}
+
+	.msg-box swiper-item {
+		line-height: 80px;
+	}
+
+	.list-box {
+		min-height: 100px;
+		width: 750px;
 		padding: 0 30px;
 		box-sizing: border-box;
+
 	}
 
-	.item-note {
-		color: #333333;
-	}
-
-	.item-info {
+	.item {
 		width: 690px;
-		min-height: 200px;
-		background-color: #ffffff;
+		min-height: 600px;
+		display: flex;
+		box-shadow: 0px 0px 8px 0px #d9d9d9;
 		border-radius: 10px;
-		border: solid 2px #d9d9d9;
-		margin: 0 auto;
-	}
-
-	.item-info-title {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 100px;
-		width: 690px;
-		padding: 0 20px;
-		box-sizing: border-box;
-		color: #999999;
-		border-bottom: solid 2px #f6f6f6;
-
-	}
-
-	.item-info-name {
-		height: 100px;
-		width: 300px;
-		display: flex;
-		align-items: center;
-		color: #333333;
-	}
-
-	.item-info-title image {
-		width: 60px;
-		height: 60px;
-		margin-right: 20px;
-	}
-	.item-info-bill{
-		font-size: 28px;
-	color: #999999;
-	}
-
-	.item-box {
-		height: 160px;
-		width: 690px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		/* padding: 0 50px;
-		box-sizing: border-box; */
-	}
-
-	.item-box-num {
-		font-size: 36px;
-		color: #999;
+		background-color: #fff;
+		overflow: hidden;
 		display: flex;
 		flex-direction: column;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+
+	.item-img {
+		width: 690px;
+		height: 300px;
+		background: url('http://pi23ib6iq.bkt.clouddn.com/banner4.png') no-repeat center;
+		background-size: cover;
+		position: relative;
+	}
+
+	.item-img-name {
+		display: flex;
+		height: 60px;
 		align-items: center;
+		margin: 40px 0 10px;
+	}
+
+
+
+	.item-img-name>image {
+		width: 60px;
+		height: 60px;
+		margin: 0 20px 0 40px;
+	}
+
+	.item-img-desc {
+		font-size: 50px;
+		margin-left: 120px;
+	}
+
+	.item-img-btn {
+		display: flex;
 		justify-content: center;
-		flex: 1;
-		height: 160px;
-		font-size: 28px;
+		align-items: center;
+		height: 64px;
+		width: 232px;
+		border-radius: 32px;
+		box-sizing: border-box;
+		border: solid 2px #ffffff;
+		align-items: center;
+		margin: 40px 0 0 120px;
 
 	}
 
-	.item-box-num-i {
-		color: #fc3036;
-		font-size: 36px;
-		color: #ec584e;
-		margin-bottom: 10px;
+	.item-img-btn image {
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
 	}
 
-	.item-box-remain-i {
-		font-size: 36px;
-		font-weight: 700;
-		margin-bottom: 10px;
-		color: #333333;
+	.item-icon-box {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.item-icon {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: #666666;
+		width: 210px;
+		height: 180px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		margin-top: 20px;
+	}
+
+	.item-icon>image {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 20px;
+	}
+	.item-icon-box .item-icon:nth-of-type(2),
+	.item-icon-box .item-icon:nth-of-type(5){
+		margin: 20px 30px 0 ;
 	}
 </style>

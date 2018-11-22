@@ -1,0 +1,44 @@
+
+.header-right text {
+  position: absolute;
+  right: 30rpx;
+  top: 70rpx;
+  font-size: 28rpx;
+  color: #67ba61;
+}
+.list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.item {
+  height: 110rpx;
+  width: 750rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: solid 2rpx #e5e5e5;
+}
+.item-name {
+  margin-left: 30rpx;
+  width: 120rpx;
+  color: #999999;
+}
+.item-input,
+.item-picker {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+.radio {
+  margin-right: 30rpx;
+}

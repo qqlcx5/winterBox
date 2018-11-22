@@ -1,0 +1,7 @@
+<template name="65074889"><view class="_view data-v-a4768b48 page"><view class="_view data-v-a4768b48 header"><view class="_view data-v-a4768b48 header-left"><text class="_text data-v-a4768b48 icon"></text></view> <view class="_view data-v-a4768b48 header-content">
+			修改好友备注
+		</view> <view class="_view data-v-a4768b48 header-right"><text class="_text data-v-a4768b48">完成</text></view></view> <view class="_view data-v-a4768b48 list"><view class="_view data-v-a4768b48 item"><text class="_text data-v-a4768b48 item-name">
+				昵称
+			</text> <input class="_input data-v-a4768b48 item-input" type="text" value="" placeholder="大脸猫" /> <image class="_image data-v-a4768b48 item-clear" src="../../static/clear.png" mode></image></view> <view class="_view data-v-a4768b48 item"><text class="_text data-v-a4768b48 item-shield">
+				屏蔽此人
+			</text> <switch class="_switch data-v-a4768b48" /></view></view></view></template>

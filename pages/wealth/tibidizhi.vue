@@ -96,6 +96,7 @@
 
 	.item-name {
 		width: 180px;
+		line-height: 100px;
 	}
 
 	.item-input {

@@ -2,7 +2,7 @@
   <view class="_view data-v-15212aa9 page">
     <view class="_view data-v-15212aa9 header-box">
       <view class="_view data-v-15212aa9 Gheader">
-        <view class="_view data-v-15212aa9 header-left " bindtap="handleProxy" data-eventid="{{'jZB-0'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-15212aa9 header-left " bindtap="handleProxy" data-eventid="{{'heM-0'}}" data-comkey="{{$k}}">
           <text class="_text data-v-15212aa9 icon"></text>
         </view>
         <view class="_view data-v-15212aa9 header-content"> 我的 </view>

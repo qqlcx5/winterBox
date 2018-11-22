@@ -1,0 +1,59 @@
+<template name="23e21154">
+  <view class="_view data-v-15212aa9 page">
+    <view class="_view data-v-15212aa9 header-box">
+      <view class="_view data-v-15212aa9 Gheader">
+        <view class="_view data-v-15212aa9 header-left " bindtap="handleProxy" data-eventid="{{'y8c-0'}}" data-comkey="{{$k}}">
+          <text class="_text data-v-15212aa9 icon"></text>
+        </view>
+        <view class="_view data-v-15212aa9 header-content"> 我的 </view>
+        <view class="_view data-v-15212aa9 header-right">
+          <text class="_text data-v-15212aa9 icon"></text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-15212aa9 qrcode-user">
+      <view class="_view data-v-15212aa9">
+        <image class="_image data-v-15212aa9 user-img" src="../../static/msg1.png" mode></image>
+      </view>
+      <view class="_view data-v-15212aa9 user-info">
+        <text class="_text data-v-15212aa9 user-name">昵称：王雄猫</text>
+        <text class="_text data-v-15212aa9 user-desc">登录名：13800138000</text>
+      </view>
+    </view>
+    <view class="_view data-v-15212aa9 list-box">
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">修改资料</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">绑定手机（已验证）</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">绑定邮箱（已验证）</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">设置支付密码（已设置）</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">API接口能力</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+      <view class="_view data-v-15212aa9 item">
+        <text class="_text data-v-15212aa9 item-icon"></text>
+        <text class="_text data-v-15212aa9 item-text">关于我们</text>
+        <text class="_text data-v-15212aa9 item-icon"></text>
+      </view>
+    </view>
+    <view class="_view data-v-15212aa9 mgt80 mgb-btn">
+      <view class="_view data-v-15212aa9 btn"> 退出登录 </view>
+    </view>
+  </view>
+</template>
